@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Burst | Fresh Fruit Deliver</title>
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+
     <!-- Daisy CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
@@ -30,6 +33,12 @@
             colors: {
               clifford: "#da373d",
             },
+            backgroundImage: {
+              "banner-1": "url('./images/banner1.png')",
+              "banner-2": "url('./images/banner2.png')",
+              "banner-3": "url('./images/banner3.png')",
+              "banner-4": "url('./images/banner4.png')",
+            },
           },
         },
       };
@@ -42,5 +51,190 @@
       }
     </style>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <!-- Navbar Section -->
+      <nav class="max-w-screen-lg mx-auto mt-5 rounded-full lg:bg-red-400 h-20">
+        <!-- <div class="navbar">
+          <div class="flex">
+            <div class="hidden lg:flex">
+              <ul class="menu menu-horizontal">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+            <div class="flex items-center">
+              <img src="./images/logo.png" alt="logo" />
+              <a href="#" class="">Fruit Burst</a>
+            </div>
+            <div class="hidden lg:block">
+              <input
+                type="text"
+                placeholder="Search Here"
+                class="input input-bordered w-full"
+              />
+            </div>
+          </div>
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+        </div> -->
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="max-w-screen-lg mx-auto mt-5">
+        <div class="carousel w-full">
+          <!-- Carousel-1 -->
+          <div id="slide1" class="carousel-item relative w-full">
+            <!-- Background -->
+            <div class="hero min-h-screen bg-banner-1">
+              <div class="hero-overlay bg-opacity-40"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md font-lato text-white">
+                  <h1 class="mb-5 text-3xl md:text-5xl font-extrabold">
+                    Exotic tastes at your doorstep
+                  </h1>
+                  <p class="mb-5 text-sm md:text-xl">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn border-none outline-none text-white hover:text-red-400 bg-red-400 hover:bg-white transition-all duration-700 ease-in normal-case"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide -->
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+
+          <!-- Carousel-2 -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <!-- Background -->
+            <div class="hero min-h-screen bg-banner-2">
+              <div class="hero-overlay bg-opacity-40"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md font-lato text-white">
+                  <h1 class="mb-5 text-3xl md:text-5xl font-extrabold">
+                    Exotic tastes at your doorstep
+                  </h1>
+                  <p class="mb-5 text-sm md:text-xl">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn border-none outline-none text-white hover:text-red-400 bg-red-400 hover:bg-white transition-all duration-700 ease-in normal-case"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide -->
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+
+          <!-- Carousel-3 -->
+          <div id="slide3" class="carousel-item relative w-full">
+            <!-- Background -->
+            <div class="hero min-h-screen bg-banner-3">
+              <div class="hero-overlay bg-opacity-40"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md font-lato text-white">
+                  <h1 class="mb-5 text-3xl md:text-5xl font-extrabold">
+                    Exotic tastes at your doorstep
+                  </h1>
+                  <p class="mb-5 text-sm md:text-xl">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn border-none outline-none text-white hover:text-red-400 bg-red-400 hover:bg-white transition-all duration-700 ease-in normal-case"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide -->
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+
+          <!-- Carousel-4 -->
+          <div id="slide4" class="carousel-item relative w-full">
+            <!-- Background -->
+            <div class="hero min-h-screen bg-banner-4">
+              <div class="hero-overlay bg-opacity-40"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md font-lato text-white">
+                  <h1 class="mb-5 text-3xl md:text-5xl font-extrabold">
+                    Exotic tastes at your doorstep
+                  </h1>
+                  <p class="mb-5 text-sm md:text-xl">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn border-none outline-none text-white hover:text-red-400 bg-red-400 hover:bg-white transition-all duration-700 ease-in normal-case"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide -->
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+  </body>
 </html>

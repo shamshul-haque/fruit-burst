@@ -60,57 +60,68 @@
   <body>
     <header>
       <!-- Navbar Section -->
-      <nav class="max-w-screen-lg mx-auto mt-5 rounded-full lg:bg-red-400 h-20">
-        <!-- <div class="navbar">
-          <div class="flex">
-            <div class="hidden lg:flex">
-              <ul class="menu menu-horizontal">
+      <nav class="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-16 mt-5">
+        <div
+          class="navbar flex justify-between bg-red-400 rounded-full font-lato"
+        >
+          <!-- menubar for large device-->
+          <div class="hidden lg:block ml-4">
+            <ul class="flex gap-5 px-1 text-white text-lg font-medium">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">All Fruits</a></li>
+            </ul>
+          </div>
+
+          <!-- logo -->
+          <div class="flex justify-end lg:justify-center">
+            <img src="./images/logo.png" alt="logo" class="w-10" />
+            <h1 class="text-white text-base lg:text-4xl font-bold pl-2">
+              Fruit Burst
+            </h1>
+          </div>
+
+          <!-- searchbar for large device -->
+          <div class="hidden lg:block">
+            <input
+              type="text"
+              placeholder="Search here"
+              class="border-none px-4 py-2 outline-none rounded-full mr-3 w-full"
+            />
+          </div>
+
+          <!-- menubar for small device -->
+          <div class="">
+            <div class="dropdown flex lg:hidden justify-end">
+              <label tabindex="0" class="btn btn-ghost">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box right-10 w-32"
+              >
                 <li><a>Home</a></li>
                 <li><a>About Us</a></li>
                 <li><a>Shop</a></li>
                 <li><a>All Fruits</a></li>
               </ul>
             </div>
-            <div class="flex items-center">
-              <img src="./images/logo.png" alt="logo" />
-              <a href="#" class="">Fruit Burst</a>
-            </div>
-            <div class="hidden lg:block">
-              <input
-                type="text"
-                placeholder="Search Here"
-                class="input input-bordered w-full"
-              />
-            </div>
           </div>
-          <div class="dropdown">
-            <label tabindex="0" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </label>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-            >
-              <li><a>Home</a></li>
-              <li><a>About Us</a></li>
-              <li><a>Shop</a></li>
-              <li><a>All Fruits</a></li>
-            </ul>
-          </div>
-        </div> -->
+        </div>
       </nav>
 
       <!-- Hero Section -->

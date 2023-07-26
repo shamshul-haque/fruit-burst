@@ -17,6 +17,12 @@
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Font Awesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/b94d418c48.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Lato Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -108,13 +114,13 @@
       </nav>
 
       <!-- Hero Section -->
-      <section class="max-w-screen-lg mx-auto mt-5">
-        <div class="carousel w-full">
+      <section class="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-16 mt-5">
+        <div class="carousel w-full rounded-lg">
           <!-- Carousel-1 -->
           <div id="slide1" class="carousel-item relative w-full">
             <!-- Background -->
             <div class="hero min-h-screen bg-banner-1">
-              <div class="hero-overlay bg-opacity-40"></div>
+              <div class="hero-overlay bg-opacity-60"></div>
               <div class="hero-content text-center text-neutral-content">
                 <div class="max-w-md font-lato text-white">
                   <h1 class="mb-5 text-3xl md:text-5xl font-extrabold">
@@ -145,7 +151,7 @@
           <div id="slide2" class="carousel-item relative w-full">
             <!-- Background -->
             <div class="hero min-h-screen bg-banner-2">
-              <div class="hero-overlay bg-opacity-40"></div>
+              <div class="hero-overlay bg-opacity-60"></div>
               <div class="hero-content text-center text-neutral-content">
                 <div class="max-w-md font-lato text-white">
                   <h1 class="mb-5 text-3xl md:text-5xl font-extrabold">
@@ -176,7 +182,7 @@
           <div id="slide3" class="carousel-item relative w-full">
             <!-- Background -->
             <div class="hero min-h-screen bg-banner-3">
-              <div class="hero-overlay bg-opacity-40"></div>
+              <div class="hero-overlay bg-opacity-60"></div>
               <div class="hero-content text-center text-neutral-content">
                 <div class="max-w-md font-lato text-white">
                   <h1 class="mb-5 text-3xl md:text-5xl font-extrabold">
@@ -207,7 +213,7 @@
           <div id="slide4" class="carousel-item relative w-full">
             <!-- Background -->
             <div class="hero min-h-screen bg-banner-4">
-              <div class="hero-overlay bg-opacity-40"></div>
+              <div class="hero-overlay bg-opacity-60"></div>
               <div class="hero-content text-center text-neutral-content">
                 <div class="max-w-md font-lato text-white">
                   <h1 class="mb-5 text-3xl md:text-5xl font-extrabold">
@@ -236,5 +242,374 @@
         </div>
       </section>
     </header>
+
+    <main>
+      <!-- Deal Section -->
+      <section class="max-w-screen-xl mx-auto px-4 md:px-12 lg:px-24 mt-20">
+        <!-- Heading -->
+        <div class="flex flex-col lg:flex-row gap-5 font-lato">
+          <!-- Content -->
+          <div class="flex-1 space-y-3 text-center lg:text-left">
+            <h1 class="text-black text-2xl md:text-4xl font-extrabold">
+              Deal of the day
+            </h1>
+            <p class="text-gray-800 text-sm lg:text-base font-medium">
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical Latin literature from 45 BC, making
+              it over 2000 years old.
+            </p>
+          </div>
+
+          <!-- Countdown -->
+          <div class="flex-1 font-lato">
+            <div class="flex justify-center lg:justify-end">
+              <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                <!-- Days -->
+                <div class="flex flex-col">
+                  <span
+                    class="countdown text-black text-2xl md:text-4xl font-extrabold"
+                  >
+                    <span style="--value: 15"></span>
+                  </span>
+                  <p class="text-gray-800 text-sm lg:text-base font-medium">
+                    Days
+                  </p>
+                </div>
+
+                <!-- Hours -->
+                <div class="flex flex-col">
+                  <span
+                    class="countdown text-black text-2xl md:text-4xl font-extrabold"
+                  >
+                    <span style="--value: 10"></span>
+                  </span>
+                  <p class="text-gray-800 text-sm lg:text-base font-medium">
+                    Hours
+                  </p>
+                </div>
+
+                <!-- Minutes -->
+                <div class="flex flex-col">
+                  <span
+                    class="countdown text-black text-2xl md:text-4xl font-extrabold"
+                  >
+                    <span style="--value: 24"></span>
+                  </span>
+                  <p class="text-gray-800 text-sm lg:text-base font-medium">
+                    Minutes
+                  </p>
+                </div>
+
+                <!-- Seconds -->
+                <div class="flex flex-col">
+                  <span
+                    class="countdown text-black text-2xl md:text-4xl font-extrabold"
+                  >
+                    <span style="--value: 22"></span>
+                  </span>
+                  <p class="text-gray-800 text-sm lg:text-base font-medium">
+                    Seconds
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="font-lato">
+          <div
+            class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mt-8 mx-2 lg:mx-0"
+          >
+            <!-- Card-1 -->
+            <div
+              class="card card-compact bg-base-100 shadow-xl border border-gray-400"
+            >
+              <!-- Content -->
+              <figure>
+                <img src="./images/fruit6.png" alt="apple" class="h-32" />
+              </figure>
+              <div class="card-body text-center">
+                <h2 class="text-black text-xl font-bold">12.90$ - 18.85$</h2>
+                <hr />
+                <p class="text-gray-800 text-sm lg:text-base font-medium">
+                  Apples
+                </p>
+                <div class="text-red-600">
+                  <i class="fa-solid fa-star cursor-pointer"></i>
+                  <i class="fa-solid fa-star-half-stroke cursor-pointer"></i>
+                  <i class="fa-regular fa-star cursor-pointer"></i>
+                  <i class="fa-regular fa-star cursor-pointer"></i>
+                  <i class="fa-regular fa-star cursor-pointer"></i>
+                </div>
+                <label
+                  for="modal-6"
+                  class="btn text-red-600 bg-transparent hover:bg-transparent border-none normal-case text-sm lg:text-base font-medium"
+                  >Details</label
+                >
+
+                <!-- Modal -->
+                <input type="checkbox" id="modal-6" class="modal-toggle" />
+                <div class="modal">
+                  <div class="modal-box">
+                    <img
+                      src="./images/fruit6.png"
+                      alt="apple"
+                      class="mx-auto"
+                    />
+                    <h3 class="text-black text-2xl font-bold">Apple</h3>
+                    <p
+                      class="py-4 text-gray-800 text-sm lg:text-base font-medium"
+                    >
+                      Professional employees are there for you to pick the most
+                      amazing and fresh fruits.
+                    </p>
+                    <div class="text-red-600">
+                      <i class="fa-solid fa-star cursor-pointer"></i>
+                      <i
+                        class="fa-solid fa-star-half-stroke cursor-pointer"
+                      ></i>
+                      <i class="fa-regular fa-star cursor-pointer"></i>
+                      <i class="fa-regular fa-star cursor-pointer"></i>
+                      <i class="fa-regular fa-star cursor-pointer"></i>
+                    </div>
+                    <div class="modal-action">
+                      <label
+                        for="modal-6"
+                        class="btn text-red-600 bg-transparent hover:bg-transparent normal-case text-sm lg:text-base font-medium border-red-400"
+                        >Close</label
+                      >
+                      <label
+                        for="modal-6"
+                        class="btn text-white bg-red-400 hover:bg-red-400 normal-case text-sm lg:text-base font-medium"
+                        >Buy Now</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card-2 -->
+            <div
+              class="card card-compact bg-base-100 shadow-xl border border-gray-400"
+            >
+              <!-- Content -->
+              <figure>
+                <img src="./images/fruit7.png" alt="orange" class="h-32" />
+              </figure>
+              <div class="card-body text-center">
+                <h2 class="text-black text-xl font-bold">18.90$ - 24.85$</h2>
+                <hr />
+                <p class="text-gray-800 text-sm lg:text-base font-medium">
+                  Orange
+                </p>
+                <div class="text-red-600">
+                  <i class="fa-solid fa-star cursor-pointer"></i>
+                  <i class="fa-solid fa-star-half-stroke cursor-pointer"></i>
+                  <i class="fa-regular fa-star cursor-pointer"></i>
+                  <i class="fa-regular fa-star cursor-pointer"></i>
+                  <i class="fa-regular fa-star cursor-pointer"></i>
+                </div>
+                <label
+                  for="modal-7"
+                  class="btn text-red-600 bg-transparent hover:bg-transparent border-none normal-case text-sm lg:text-base font-medium"
+                  >Details</label
+                >
+
+                <!-- Modal -->
+                <input type="checkbox" id="modal-7" class="modal-toggle" />
+                <div class="modal">
+                  <div class="modal-box">
+                    <img
+                      src="./images/fruit7.png"
+                      alt="orange"
+                      class="mx-auto"
+                    />
+                    <h3 class="text-black text-2xl font-bold">Orange</h3>
+                    <p
+                      class="py-4 text-gray-800 text-sm lg:text-base font-medium"
+                    >
+                      Professional employees are there for you to pick the most
+                      amazing and fresh fruits.
+                    </p>
+                    <div class="text-red-600">
+                      <i class="fa-solid fa-star cursor-pointer"></i>
+                      <i
+                        class="fa-solid fa-star-half-stroke cursor-pointer"
+                      ></i>
+                      <i class="fa-regular fa-star cursor-pointer"></i>
+                      <i class="fa-regular fa-star cursor-pointer"></i>
+                      <i class="fa-regular fa-star cursor-pointer"></i>
+                    </div>
+                    <div class="modal-action">
+                      <label
+                        for="modal-7"
+                        class="btn text-red-600 bg-transparent hover:bg-transparent normal-case text-sm lg:text-base font-medium border-red-400"
+                        >Close</label
+                      >
+                      <label
+                        for="modal-7"
+                        class="btn text-white bg-red-400 hover:bg-red-400 normal-case text-sm lg:text-base font-medium"
+                        >Buy Now</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card-3 -->
+            <div
+              class="card card-compact bg-base-100 shadow-xl border border-gray-400"
+            >
+              <!-- Content -->
+              <figure>
+                <img src="./images/fruit8.png" alt="red-dragon" class="h-32" />
+              </figure>
+              <div class="card-body text-center">
+                <h2 class="text-black text-xl font-bold">24.90$ - 32.85$</h2>
+                <hr />
+                <p class="text-gray-800 text-sm lg:text-base font-medium">
+                  Red Dragon
+                </p>
+                <div class="text-red-600">
+                  <i class="fa-solid fa-star cursor-pointer"></i>
+                  <i class="fa-solid fa-star-half-stroke cursor-pointer"></i>
+                  <i class="fa-regular fa-star cursor-pointer"></i>
+                  <i class="fa-regular fa-star cursor-pointer"></i>
+                  <i class="fa-regular fa-star cursor-pointer"></i>
+                </div>
+                <label
+                  for="modal-8"
+                  class="btn text-red-600 bg-transparent hover:bg-transparent border-none normal-case text-sm lg:text-base font-medium"
+                  >Details</label
+                >
+
+                <!-- Modal -->
+                <input type="checkbox" id="modal-8" class="modal-toggle" />
+                <div class="modal">
+                  <div class="modal-box">
+                    <img
+                      src="./images/fruit8.png"
+                      alt="red-dragon"
+                      class="mx-auto"
+                    />
+                    <h3 class="text-black text-2xl font-bold">Red Dragon</h3>
+                    <p
+                      class="py-4 text-gray-800 text-sm lg:text-base font-medium"
+                    >
+                      Professional employees are there for you to pick the most
+                      amazing and fresh fruits.
+                    </p>
+                    <div class="text-red-600">
+                      <i class="fa-solid fa-star cursor-pointer"></i>
+                      <i
+                        class="fa-solid fa-star-half-stroke cursor-pointer"
+                      ></i>
+                      <i class="fa-regular fa-star cursor-pointer"></i>
+                      <i class="fa-regular fa-star cursor-pointer"></i>
+                      <i class="fa-regular fa-star cursor-pointer"></i>
+                    </div>
+                    <div class="modal-action">
+                      <label
+                        for="modal-8"
+                        class="btn text-red-600 bg-transparent hover:bg-transparent normal-case text-sm lg:text-base font-medium border-red-400"
+                        >Close</label
+                      >
+                      <label
+                        for="modal-8"
+                        class="btn text-white bg-red-400 hover:bg-red-400 normal-case text-sm lg:text-base font-medium"
+                        >Buy Now</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card-4 -->
+            <div
+              class="card card-compact bg-base-100 shadow-xl border border-gray-400"
+            >
+              <!-- Content -->
+              <figure>
+                <img src="./images/fruit9.png" alt="banana" class="h-32" />
+              </figure>
+              <div class="card-body text-center">
+                <h2 class="text-black text-xl font-bold">32.90$ - 40.85$</h2>
+                <hr />
+                <p class="text-gray-800 text-sm lg:text-base font-medium">
+                  Banana
+                </p>
+                <div class="text-red-600">
+                  <i class="fa-solid fa-star cursor-pointer"></i>
+                  <i class="fa-solid fa-star-half-stroke cursor-pointer"></i>
+                  <i class="fa-regular fa-star cursor-pointer"></i>
+                  <i class="fa-regular fa-star cursor-pointer"></i>
+                  <i class="fa-regular fa-star cursor-pointer"></i>
+                </div>
+                <label
+                  for="modal-9"
+                  class="btn text-red-600 bg-transparent hover:bg-transparent border-none normal-case text-sm lg:text-base font-medium"
+                  >Details</label
+                >
+
+                <!-- Modal -->
+                <input type="checkbox" id="modal-9" class="modal-toggle" />
+                <div class="modal">
+                  <div class="modal-box">
+                    <img
+                      src="./images/fruit9.png"
+                      alt="banana"
+                      class="mx-auto"
+                    />
+                    <h3 class="text-black text-2xl font-bold">Banana</h3>
+                    <p
+                      class="py-4 text-gray-800 text-sm lg:text-base font-medium"
+                    >
+                      Professional employees are there for you to pick the most
+                      amazing and fresh fruits.
+                    </p>
+                    <div class="text-red-600">
+                      <i class="fa-solid fa-star cursor-pointer"></i>
+                      <i
+                        class="fa-solid fa-star-half-stroke cursor-pointer"
+                      ></i>
+                      <i class="fa-regular fa-star cursor-pointer"></i>
+                      <i class="fa-regular fa-star cursor-pointer"></i>
+                      <i class="fa-regular fa-star cursor-pointer"></i>
+                    </div>
+                    <div class="modal-action">
+                      <label
+                        for="modal-9"
+                        class="btn text-red-600 bg-transparent hover:bg-transparent normal-case text-sm lg:text-base font-medium border-red-400"
+                        >Close</label
+                      >
+                      <label
+                        for="modal-9"
+                        class="btn text-white bg-red-400 hover:bg-red-400 normal-case text-sm lg:text-base font-medium"
+                        >Buy Now</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button -->
+        <div class="flex justify-center mt-10">
+          <button
+            class="btn border-none outline-none text-white bg-red-400 hover:bg-red-400 normal-case"
+          >
+            Shop All
+          </button>
+        </div>
+      </section>
+
+      <section class="mt-20"></section>
+    </main>
   </body>
 </html>

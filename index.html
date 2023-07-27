@@ -4,26 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Burst | Fresh Fruit Deliver</title>
-    <!-- Fav Icon -->
+    <!-- fav icon -->
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
 
-    <!-- Daisy CDN -->
+    <!-- daisy ui cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
       rel="stylesheet"
       type="text/css"
     />
 
-    <!-- Tailwind CDN -->
+    <!-- tailwind css cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Font Awesome Kit -->
+    <!-- font-awesome kit -->
     <script
       src="https://kit.fontawesome.com/b94d418c48.js"
       crossorigin="anonymous"
     ></script>
 
-    <!-- Lato Google Font -->
+    <!-- lato google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,7 +31,7 @@
       rel="stylesheet"
     />
 
-    <!-- Tailwind Custom Class -->
+    <!-- tailwind custom classes -->
     <script>
       tailwind.config = {
         theme: {
@@ -47,19 +47,20 @@
       };
     </script>
 
-    <!-- Custom Style -->
+    <!-- custom styles -->
     <style>
       .font-lato {
         font-family: "Lato", sans-serif;
       }
     </style>
   </head>
+
   <body>
     <header>
-      <!-- Navbar Section -->
+      <!-- navbar section -->
       <nav class="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-16 mt-5">
         <div
-          class="navbar flex justify-between bg-red-400 rounded-full font-lato"
+          class="navbar flex justify-between lg:bg-red-400 rounded-full font-lato"
         >
           <!-- menubar for large device-->
           <div class="hidden lg:block ml-3">
@@ -72,9 +73,11 @@
           </div>
 
           <!-- logo -->
-          <div class="flex justify-end lg:justify-center ml-3 lg:ml-0">
+          <div class="flex justify-end lg:justify-center">
             <img src="./images/logo.png" alt="logo" class="w-10" />
-            <h1 class="text-white text-base lg:text-4xl font-bold pl-2">
+            <h1
+              class="text-black lg:text-white text-2xl lg:text-4xl font-bold pl-2"
+            >
               Fruit Burst
             </h1>
           </div>
@@ -94,20 +97,19 @@
 
             <!-- menubar for small device -->
             <div class="dropdown block lg:hidden">
-              <label tabindex="0" class="btn btn-ghost">
+              <label tabindex="0" class="btn btn-ghost px-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  class="inline-block w-5 h-5 stroke-current"
                 >
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
                 </svg>
               </label>
               <ul
@@ -124,12 +126,13 @@
         </div>
       </nav>
 
-      <!-- Hero Section -->
+      <!-- hero Section -->
       <section class="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-16 mt-5">
+        <!-- carousel content -->
         <div class="carousel w-full rounded-lg">
-          <!-- Carousel-1 -->
+          <!-- carousel-1 -->
           <div id="slide1" class="carousel-item relative w-full">
-            <!-- Background -->
+            <!-- background -->
             <div class="hero min-h-screen bg-banner-1">
               <div class="hero-overlay bg-opacity-50"></div>
               <div class="hero-content text-center text-neutral-content">
@@ -149,18 +152,18 @@
               </div>
             </div>
 
-            <!-- Slide -->
+            <!-- slider -->
             <div
-              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              class="absolute flex justify-between transform -translate-y-1/2 left-2 md:left-5 right-2 md:right-5 top-1/2"
             >
               <a href="#slide4" class="btn btn-circle">❮</a>
               <a href="#slide2" class="btn btn-circle">❯</a>
             </div>
           </div>
 
-          <!-- Carousel-2 -->
+          <!-- carousel-2 -->
           <div id="slide2" class="carousel-item relative w-full">
-            <!-- Background -->
+            <!-- background -->
             <div class="hero min-h-screen bg-banner-2">
               <div class="hero-overlay bg-opacity-50"></div>
               <div class="hero-content text-center text-neutral-content">
@@ -180,18 +183,18 @@
               </div>
             </div>
 
-            <!-- Slide -->
+            <!-- slider -->
             <div
-              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              class="absolute flex justify-between transform -translate-y-1/2 left-2 md:left-5 right-2 md:right-5 top-1/2"
             >
               <a href="#slide1" class="btn btn-circle">❮</a>
               <a href="#slide3" class="btn btn-circle">❯</a>
             </div>
           </div>
 
-          <!-- Carousel-3 -->
+          <!-- carousel-3 -->
           <div id="slide3" class="carousel-item relative w-full">
-            <!-- Background -->
+            <!-- background -->
             <div class="hero min-h-screen bg-banner-3">
               <div class="hero-overlay bg-opacity-50"></div>
               <div class="hero-content text-center text-neutral-content">
@@ -211,18 +214,18 @@
               </div>
             </div>
 
-            <!-- Slide -->
+            <!-- slider -->
             <div
-              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              class="absolute flex justify-between transform -translate-y-1/2 left-2 md:left-5 right-2 md:right-5 top-1/2"
             >
               <a href="#slide2" class="btn btn-circle">❮</a>
               <a href="#slide4" class="btn btn-circle">❯</a>
             </div>
           </div>
 
-          <!-- Carousel-4 -->
+          <!-- carousel-4 -->
           <div id="slide4" class="carousel-item relative w-full">
-            <!-- Background -->
+            <!-- background -->
             <div class="hero min-h-screen bg-banner-4">
               <div class="hero-overlay bg-opacity-50"></div>
               <div class="hero-content text-center text-neutral-content">
@@ -242,9 +245,9 @@
               </div>
             </div>
 
-            <!-- Slide -->
+            <!-- slider -->
             <div
-              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              class="absolute flex justify-between transform -translate-y-1/2 left-2 md:left-5 right-2 md:right-5 top-1/2"
             >
               <a href="#slide3" class="btn btn-circle">❮</a>
               <a href="#slide1" class="btn btn-circle">❯</a>
@@ -252,6 +255,7 @@
           </div>
         </div>
 
+        <!-- carousel footer -->
         <div
           class="max-w-fit p-5 bg-white drop-shadow rounded-lg hidden lg:block mx-auto -mt-20"
         >
@@ -267,11 +271,11 @@
     </header>
 
     <main>
-      <!-- Deal Section -->
+      <!-- deal section -->
       <section class="max-w-screen-xl mx-auto px-4 md:px-12 lg:px-16 mt-20">
-        <!-- Heading -->
+        <!-- heading -->
         <div class="flex flex-col lg:flex-row gap-5 font-lato items-center">
-          <!-- Content -->
+          <!-- content -->
           <div class="flex-1 space-y-3 text-center lg:text-left">
             <h1 class="text-black text-2xl md:text-4xl font-extrabold">
               Deal of the day
@@ -346,16 +350,15 @@
           </div>
         </div>
 
-        <!-- Cards -->
+        <!-- cards -->
         <div class="font-lato">
           <div
             class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mt-8 mx-2 lg:mx-0"
           >
-            <!-- Card-1 -->
+            <!-- card-1 -->
             <div
               class="card card-compact bg-base-100 shadow-xl border border-gray-400 pt-5"
             >
-              <!-- Content -->
               <figure>
                 <img src="./images/fruit6.png" alt="apple" class="h-32" />
               </figure>
@@ -420,11 +423,10 @@
               </div>
             </div>
 
-            <!-- Card-2 -->
+            <!-- card-2 -->
             <div
               class="card card-compact bg-base-100 shadow-xl border border-gray-400 pt-5"
             >
-              <!-- Content -->
               <figure>
                 <img src="./images/fruit7.png" alt="orange" class="h-32" />
               </figure>
@@ -489,11 +491,10 @@
               </div>
             </div>
 
-            <!-- Card-3 -->
+            <!-- card-3 -->
             <div
               class="card card-compact bg-base-100 shadow-xl border border-gray-400 pt-5"
             >
-              <!-- Content -->
               <figure>
                 <img src="./images/fruit8.png" alt="red-dragon" class="h-32" />
               </figure>
@@ -558,11 +559,10 @@
               </div>
             </div>
 
-            <!-- Card-4 -->
+            <!-- card-4 -->
             <div
               class="card card-compact bg-base-100 shadow-xl border border-gray-400 pt-5"
             >
-              <!-- Content -->
               <figure>
                 <img src="./images/fruit9.png" alt="banana" class="h-32" />
               </figure>
@@ -629,7 +629,7 @@
           </div>
         </div>
 
-        <!-- Button -->
+        <!-- button -->
         <div class="flex justify-center mt-10">
           <button
             class="btn border-none outline-none text-white bg-red-400 hover:bg-red-400 normal-case"
@@ -639,12 +639,12 @@
         </div>
       </section>
 
-      <!-- Team Section -->
+      <!-- team section -->
       <section class="max-w-screen-xl mx-auto px-4 md:px-12 lg:px-16 mt-20">
         <div class="hero min-h-screen bg-banner-1 rounded-lg">
           <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
           <div>
-            <!-- Heading -->
+            <!-- heading -->
             <div
               class="space-y-3 text-center text-white font-lato px-5 pt-10 md:px-20 lg:px-60"
             >
@@ -656,12 +656,12 @@
               </p>
             </div>
 
-            <!-- Cards -->
+            <!-- cards -->
             <div class="font-lato flex justify-center mt-5">
               <div
                 class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mt-8 mx-2 lg:mx-0"
               >
-                <!-- Card-1 -->
+                <!-- card-1 -->
                 <div class="card bg-transparent">
                   <figure>
                     <img src="./images/member1.png" alt="awlad" />
@@ -691,7 +691,7 @@
                   </div>
                 </div>
 
-                <!-- Card-2 -->
+                <!-- card-2 -->
                 <div class="card bg-transparent">
                   <figure>
                     <img src="./images/member2.png" alt="safia" />
@@ -721,7 +721,7 @@
                   </div>
                 </div>
 
-                <!-- Card-3 -->
+                <!-- card-3 -->
                 <div class="card bg-transparent">
                   <figure>
                     <img src="./images/member3.png" alt="rakib" />
@@ -786,7 +786,7 @@
         </div>
       </section>
 
-      <!-- Choice Section -->
+      <!-- choice section -->
       <section class="max-w-screen-xl mx-auto px-4 md:px-12 lg:px-16 mt-20">
         <!-- heading -->
         <div
@@ -925,7 +925,7 @@
             </div>
           </div>
 
-          <!-- right -->
+          <!-- right content -->
           <div class="flex-1 font-lato">
             <div
               class="flex flex-col lg:flex-row-reverse items-center lg:items-start gap-2 mt-5 lg:mt-0 lg:mb-5"
@@ -998,68 +998,70 @@
     </main>
 
     <!-- footer section -->
-    <footer class="max-w-screen-xl mx-auto">
-      <div
-        class="footer footer-center bg-black px-4 md:px-12 lg:px-16 mt-20 py-10"
-      >
-        <!-- Logo -->
-        <div class="flex items-center">
-          <img src="./images/logo.png" alt="logo" />
-          <span class="text-white text-3xl md:text-5xl font-bold"
-            >Fruit Burst</span
-          >
-        </div>
+    <footer>
+      <section class="max-w-screen-xl mx-auto">
+        <div
+          class="footer footer-center bg-black px-4 md:px-12 lg:px-16 mt-20 py-10"
+        >
+          <!-- logo -->
+          <div class="flex items-center">
+            <img src="./images/logo.png" alt="logo" />
+            <span class="text-white text-3xl md:text-5xl font-bold"
+              >Fruit Burst</span
+            >
+          </div>
 
-        <!-- Links -->
-        <div class="flex flex-wrap justify-center gap-10 text-white px-10">
-          <a class="link link-hover">Home</a>
-          <a class="link link-hover">About us</a>
-          <a class="link link-hover">Shop</a>
-          <a class="link link-hover">All Fruits</a>
-          <a class="link link-hover">Support</a>
-          <a class="link link-hover">My Account</a>
-        </div>
+          <!-- links -->
+          <div class="flex flex-wrap justify-center gap-10 text-white px-10">
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Shop</a>
+            <a class="link link-hover">All Fruits</a>
+            <a class="link link-hover">Support</a>
+            <a class="link link-hover">My Account</a>
+          </div>
 
-        <!-- Social -->
-        <div class="grid grid-flow-col gap-5">
-          <a href="#"
-            ><img
-              src="./images/twitter.png"
-              alt="twitter"
-              class="w-10 rounded-full"
-          /></a>
-          <a href="#"
-            ><img
-              src="./images/facebook.png"
-              alt="facebook"
-              class="w-10 rounded-full"
-          /></a>
-          <a href="#"
-            ><img
-              src="./images/youtube.png"
-              alt="youtube"
-              class="w-10 rounded-full"
-          /></a>
-          <a href="#"
-            ><img
-              src="./images/linkedin.png"
-              alt="linkedin"
-              class="w-10 rounded-full"
-          /></a>
-          <a href="#"
-            ><img
-              src="./images/instagram.png"
-              alt="instagram"
-              class="w-10 rounded-full"
-          /></a>
-          <a href="#"
-            ><img
-              src="./images/apple.png"
-              alt="apple"
-              class="w-10 rounded-full"
-          /></a>
+          <!-- social -->
+          <div class="grid grid-flow-col gap-5">
+            <a href="#"
+              ><img
+                src="./images/twitter.png"
+                alt="twitter"
+                class="w-10 rounded-full"
+            /></a>
+            <a href="#"
+              ><img
+                src="./images/facebook.png"
+                alt="facebook"
+                class="w-10 rounded-full"
+            /></a>
+            <a href="#"
+              ><img
+                src="./images/youtube.png"
+                alt="youtube"
+                class="w-10 rounded-full"
+            /></a>
+            <a href="#"
+              ><img
+                src="./images/linkedin.png"
+                alt="linkedin"
+                class="w-10 rounded-full"
+            /></a>
+            <a href="#"
+              ><img
+                src="./images/instagram.png"
+                alt="instagram"
+                class="w-10 rounded-full"
+            /></a>
+            <a href="#"
+              ><img
+                src="./images/apple.png"
+                alt="apple"
+                class="w-10 rounded-full"
+            /></a>
+          </div>
         </div>
-      </div>
+      </section>
     </footer>
   </body>
 </html>

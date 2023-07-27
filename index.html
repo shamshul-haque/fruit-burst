@@ -82,43 +82,45 @@
             </h1>
           </div>
 
-          <!-- searchbar for large device -->
-          <div class="hidden lg:block">
-            <input
-              type="text"
-              placeholder="Search here"
-              class="border-none px-4 py-2 outline-none rounded-full mr-3 w-full"
-            />
-          </div>
+          <div>
+            <!-- searchbar for large device -->
+            <div class="hidden lg:block">
+              <input
+                type="text"
+                placeholder="Search here"
+                class="border-none px-4 py-2 outline-none rounded-full mr-3 w-full"
+              />
+            </div>
 
-          <!-- menubar for small device -->
-          <div class="">
-            <div class="dropdown flex lg:hidden justify-end">
-              <label tabindex="0" class="btn btn-ghost">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+            <!-- menubar for small device -->
+            <div class="">
+              <div class="dropdown block lg:hidden">
+                <label tabindex="0" class="btn btn-ghost">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </label>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box right-10 w-32"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </label>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box right-10 w-32"
-              >
-                <li><a>Home</a></li>
-                <li><a>About Us</a></li>
-                <li><a>Shop</a></li>
-                <li><a>All Fruits</a></li>
-              </ul>
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

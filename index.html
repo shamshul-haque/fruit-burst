@@ -36,9 +36,6 @@
       tailwind.config = {
         theme: {
           extend: {
-            colors: {
-              clifford: "#da373d",
-            },
             backgroundImage: {
               "banner-1": "url('./images/banner1.png')",
               "banner-2": "url('./images/banner2.png')",
@@ -65,7 +62,7 @@
           class="navbar flex justify-between bg-red-400 rounded-full font-lato"
         >
           <!-- menubar for large device-->
-          <div class="hidden lg:block ml-4">
+          <div class="hidden lg:block ml-3">
             <ul class="flex gap-5 px-1 text-white text-lg font-medium">
               <li><a href="#">Home</a></li>
               <li><a href="#">About Us</a></li>
@@ -75,52 +72,51 @@
           </div>
 
           <!-- logo -->
-          <div class="flex justify-end lg:justify-center">
+          <div class="flex justify-end lg:justify-center ml-3 lg:ml-0">
             <img src="./images/logo.png" alt="logo" class="w-10" />
             <h1 class="text-white text-base lg:text-4xl font-bold pl-2">
               Fruit Burst
             </h1>
           </div>
 
-          <div>
+          <div class="lg:mr-3">
             <!-- searchbar for large device -->
-            <div class="hidden lg:block">
+            <div class="hidden lg:block relative">
               <input
                 type="text"
                 placeholder="Search here"
-                class="border-none px-4 py-2 outline-none rounded-full mr-3 w-full"
+                class="border-none px-4 py-2 outline-none rounded-full w-full"
               />
+              <i class="fa-solid fa-magnifying-glass text-gray-400 absolute top-3 right-3"></i>
             </div>
 
             <!-- menubar for small device -->
-            <div class="">
-              <div class="dropdown block lg:hidden">
-                <label tabindex="0" class="btn btn-ghost">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16"
-                    />
-                  </svg>
-                </label>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box right-10 w-32"
+            <div class="dropdown block lg:hidden">
+              <label tabindex="0" class="btn btn-ghost">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
                 >
-                  <li><a>Home</a></li>
-                  <li><a>About Us</a></li>
-                  <li><a>Shop</a></li>
-                  <li><a>All Fruits</a></li>
-                </ul>
-              </div>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box right-10 w-32"
+              >
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
             </div>
           </div>
         </div>
